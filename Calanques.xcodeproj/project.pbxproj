@@ -20,6 +20,7 @@
 		E5AC300E21E0397500966B29 /* imgCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC300D21E0397500966B29 /* imgCircle.swift */; };
 		E5AC301021E0F25B00966B29 /* CalanqueCellAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC300F21E0F25B00966B29 /* CalanqueCellAlternative.swift */; };
 		E5AC301221E1036C00966B29 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC301121E1036C00966B29 /* DetailController.swift */; };
+		E5AC301421E1181800966B29 /* btnRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC301321E1181800966B29 /* btnRounded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E5AC300D21E0397500966B29 /* imgCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imgCircle.swift; sourceTree = "<group>"; };
 		E5AC300F21E0F25B00966B29 /* CalanqueCellAlternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCellAlternative.swift; sourceTree = "<group>"; };
 		E5AC301121E1036C00966B29 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		E5AC301321E1181800966B29 /* btnRounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btnRounded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				E5AC300B21E0343C00966B29 /* CalanqueCell.swift */,
 				E5AC300D21E0397500966B29 /* imgCircle.swift */,
 				E5AC300F21E0F25B00966B29 /* CalanqueCellAlternative.swift */,
+				E5AC301321E1181800966B29 /* btnRounded.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				E5AC301021E0F25B00966B29 /* CalanqueCellAlternative.swift in Sources */,
 				E5AC300A21DD8FC600966B29 /* TableViewWithController.swift in Sources */,
 				E5AC300621DD8F7200966B29 /* ControllerWithTableView.swift in Sources */,
+				E5AC301421E1181800966B29 /* btnRounded.swift in Sources */,
 				E5AC301221E1036C00966B29 /* DetailController.swift in Sources */,
 				E5AC300221DD89E600966B29 /* Calanques.swift in Sources */,
 			);

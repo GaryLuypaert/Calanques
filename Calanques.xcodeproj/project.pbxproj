@@ -16,6 +16,8 @@
 		E5AC300621DD8F7200966B29 /* ControllerWithTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC300521DD8F7200966B29 /* ControllerWithTableView.swift */; };
 		E5AC300821DD8FA600966B29 /* ControllerWithMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC300721DD8FA600966B29 /* ControllerWithMap.swift */; };
 		E5AC300A21DD8FC600966B29 /* TableViewWithController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC300921DD8FC600966B29 /* TableViewWithController.swift */; };
+		E5AC300C21E0343C00966B29 /* CalanqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC300B21E0343C00966B29 /* CalanqueCell.swift */; };
+		E5AC300E21E0397500966B29 /* imgCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC300D21E0397500966B29 /* imgCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		E5AC300521DD8F7200966B29 /* ControllerWithTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerWithTableView.swift; sourceTree = "<group>"; };
 		E5AC300721DD8FA600966B29 /* ControllerWithMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerWithMap.swift; sourceTree = "<group>"; };
 		E5AC300921DD8FC600966B29 /* TableViewWithController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewWithController.swift; sourceTree = "<group>"; };
+		E5AC300B21E0343C00966B29 /* CalanqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCell.swift; sourceTree = "<group>"; };
+		E5AC300D21E0397500966B29 /* imgCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imgCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 		E5AC2FFF21DD896D00966B29 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E5AC300B21E0343C00966B29 /* CalanqueCell.swift */,
+				E5AC300D21E0397500966B29 /* imgCircle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,7 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5AC300821DD8FA600966B29 /* ControllerWithMap.swift in Sources */,
+				E5AC300E21E0397500966B29 /* imgCircle.swift in Sources */,
 				E5AC2FEB21DD861C00966B29 /* AppDelegate.swift in Sources */,
+				E5AC300C21E0343C00966B29 /* CalanqueCell.swift in Sources */,
 				E5AC300421DD8C0100966B29 /* CalanqueCollection.swift in Sources */,
 				E5AC300A21DD8FC600966B29 /* TableViewWithController.swift in Sources */,
 				E5AC300621DD8F7200966B29 /* ControllerWithTableView.swift in Sources */,

@@ -153,10 +153,42 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LOg-KL-13l">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LOg-KL-13l" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="K3y-3H-lO7"/>
+                            <constraint firstItem="LOg-KL-13l" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="Q80-9d-ScE"/>
+                            <constraint firstItem="LOg-KL-13l" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="urh-Au-yBJ"/>
+                            <constraint firstItem="LOg-KL-13l" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="uwf-BX-EjT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="W03-wD-A3x"/>
+                    <navigationItem key="navigationItem" id="W03-wD-A3x">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="RMV-CB-1kp">
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Standard"/>
+                                <segment title="Satellite"/>
+                                <segment title="Hybride"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="fhi-Y6-Vwf"/>
+                            </connections>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="placeholder" id="DDT-kw-IIY">
+                            <connections>
+                                <action selector="getPosition:" destination="8rJ-Kc-sve" id="KSR-fe-cKd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="LOg-KL-13l" id="k6f-4i-FfS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -460,6 +492,7 @@
         <image name="callelongue" width="329.14285278320312" height="219.29142761230469"/>
         <image name="earth" width="25.600000381469727" height="25.600000381469727"/>
         <image name="list" width="25.600000381469727" height="25.600000381469727"/>
+        <image name="placeholder" width="32" height="32"/>
         <image name="port miou" width="900" height="600"/>
         <image name="sormiou" width="799.817138671875" height="533.21142578125"/>
     </resources>

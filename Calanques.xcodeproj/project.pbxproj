@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5462E6B21E2EC48004D6D33 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5462E6A21E2EC48004D6D33 /* AnnotationView.swift */; };
 		E5AC2FEB21DD861C00966B29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC2FEA21DD861C00966B29 /* AppDelegate.swift */; };
 		E5AC2FF221DD861C00966B29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AC2FF021DD861C00966B29 /* Main.storyboard */; };
 		E5AC2FF421DD861F00966B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AC2FF321DD861F00966B29 /* Assets.xcassets */; };
@@ -21,9 +22,11 @@
 		E5AC301021E0F25B00966B29 /* CalanqueCellAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC300F21E0F25B00966B29 /* CalanqueCellAlternative.swift */; };
 		E5AC301221E1036C00966B29 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC301121E1036C00966B29 /* DetailController.swift */; };
 		E5AC301421E1181800966B29 /* btnRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC301321E1181800966B29 /* btnRounded.swift */; };
+		E5AC301621E18E3200966B29 /* MonAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC301521E18E3200966B29 /* MonAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E5462E6A21E2EC48004D6D33 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
 		E5AC2FE721DD861C00966B29 /* Calanques.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calanques.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AC2FEA21DD861C00966B29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5AC2FF121DD861C00966B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		E5AC300F21E0F25B00966B29 /* CalanqueCellAlternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCellAlternative.swift; sourceTree = "<group>"; };
 		E5AC301121E1036C00966B29 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		E5AC301321E1181800966B29 /* btnRounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btnRounded.swift; sourceTree = "<group>"; };
+		E5AC301521E18E3200966B29 /* MonAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 			children = (
 				E5AC300121DD89E600966B29 /* Calanques.swift */,
 				E5AC300321DD8C0100966B29 /* CalanqueCollection.swift */,
+				E5AC301521E18E3200966B29 /* MonAnnotation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 				E5AC300D21E0397500966B29 /* imgCircle.swift */,
 				E5AC300F21E0F25B00966B29 /* CalanqueCellAlternative.swift */,
 				E5AC301321E1181800966B29 /* btnRounded.swift */,
+				E5462E6A21E2EC48004D6D33 /* AnnotationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,8 +195,10 @@
 				E5AC300821DD8FA600966B29 /* ControllerWithMap.swift in Sources */,
 				E5AC300E21E0397500966B29 /* imgCircle.swift in Sources */,
 				E5AC2FEB21DD861C00966B29 /* AppDelegate.swift in Sources */,
+				E5AC301621E18E3200966B29 /* MonAnnotation.swift in Sources */,
 				E5AC300C21E0343C00966B29 /* CalanqueCell.swift in Sources */,
 				E5AC300421DD8C0100966B29 /* CalanqueCollection.swift in Sources */,
+				E5462E6B21E2EC48004D6D33 /* AnnotationView.swift in Sources */,
 				E5AC301021E0F25B00966B29 /* CalanqueCellAlternative.swift in Sources */,
 				E5AC300A21DD8FC600966B29 /* TableViewWithController.swift in Sources */,
 				E5AC300621DD8F7200966B29 /* ControllerWithTableView.swift in Sources */,

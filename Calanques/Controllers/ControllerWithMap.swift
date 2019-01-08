@@ -9,16 +9,55 @@
 import UIKit
 import MapKit
 
-class ControllerWithMap: UIViewController, MKMapViewDelegate {
+class ControllerWithMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
     var calanques: [Calanque] = CalanqueCollection().all()
+    // Variable for location
+    var locationManager = CLLocationManager()
+    var userLocation: CLLocation?
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
+        locationManager.delegate = self
+        
+        mapView.showsUserLocation = true
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
+        
         addAnnotations()
+        
+        if calanques.count > 5 {
+            let premiere = calanques[5].coordinates
+            setupMap(coordinates: premiere)
+        }
+        
+        // Get infos by NotificationCenter
+//        NotificationCenter.default.addObserver(self, selector: #selector(detailNotif), name: Notification.Name("detail"), object: nil)
+    }
+    
+//    @objc func detailNotif(notification: Notification) {
+//        if let calanque = notification.object as? Calanque {
+//            toDetail(calanque: calanque)
+//        }
+//      }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if locations.count > 0 {
+            if let maPosition = locations.last {
+                userLocation = maPosition
+            }
+        }
+    }
+
+    func setupMap(coordinates: CLLocationCoordinate2D) {
+        let span = MKCoordinateSpan(latitudeDelta: 0.35, longitudeDelta: 0.35)
+        let region = MKCoordinateRegion(center: coordinates, span: span)
+        mapView.setRegion(region, animated: true)
     }
     
     func addAnnotations() {
@@ -90,6 +129,9 @@ class ControllerWithMap: UIViewController, MKMapViewDelegate {
     }
     
     @IBAction func getPosition(_ sender: Any) {
+        if userLocation != nil {
+            setupMap(coordinates: userLocation!.coordinate)
+        }
     }
     
     

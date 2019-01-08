@@ -69,11 +69,20 @@ class AnnotationView: MKAnnotationView {
     }
     
     @objc func distance() {
+        guard let anno = annotation as? MonAnnotation else { return }
+        let placemark = MKPlacemark(coordinate: anno.coordinate)
+        let options = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
+        let map = MKMapItem(placemark: placemark)
+        map.openInMaps(launchOptions: options)
         
     }
     
     @objc func detail() {
         guard let anno = annotation as? MonAnnotation else { return }
+        
         controller?.toDetail(calanque: anno.calanque)
+        
+        // Get infos by NotificationCenter
+//        NotificationCenter.default.post(name: Notification.Name("detail"), object: anno.calanque)
     }
 }
